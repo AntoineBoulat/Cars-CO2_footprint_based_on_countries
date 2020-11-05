@@ -31,45 +31,40 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The names, affiliations (where appropriate) and contact details of the person, people or consortium that manage the development of the ontology. |
-| **Importance:** | MUST |
-| **Example:** | GO Administrators, go@geneontology.org |
+| **Description:** | Jerome Dauba jerome.dauba@telecom-paris.fr , Jean-Charles Lévy jean-charles.levy@telecom-paris.fr , Antoine Boulat antoine.boulat@teleco-paris.fr  |
+
 ----
 
 ### A.3 Ontology license
 
 |  | Specification |
 |---|---|
-| **Description:** | The licence which governs the permissions surrounding the ontology. |
-| **Importance:** | MUST |
-| **Example:** | Creative Commons Attribution 3.0 (CC BY 3.0) |
+| **Description:** | Apache 2.0 |
+
 ----
 
 ### A.4 Ontology URL
 
 |  | Specification |
 |---|---|
-| **Description:** | The web location where the ontology file is available. |
-| **Importance:** | MUST |
-| **Example:** | http://www.berkeleybop.org/ontologies/doid.owl |
+| **Description:** | http://www.semanticweb.org/jerom/ontologies/2020/9/car/v2 |
+
 ----
 
 ### A.5 Ontology repository
 
 |  | Specification |
 |---|---|
-| **Description:** | The web location (URL) of the version control system where current and previous versions of the ontology can be found. |
-| **Importance:** | MUST |
-| **Example:** | https://github.com/geneontology |
+| **Description:** | https://github.com/AntoineBoulat/miro-master |
+
 ----
 
 ### A.6 Methodological framework
 
 |  | Specification |
 |---|---|
-| **Description:** | A name or description of the steps taken to develop the ontology. This should describe the overall organisation of the ontology development process. |
-| **Importance:** | MUST |
-| **Example:** | Methontology, On-To-Knowledge, Neon methodology. If no bespoke methodological framework was used, describe how the core activities of the ontology engineering lifecycle (such as ontology management, development and support) were addressed (http://onlinelibrary.wiley.com/doi/10.1002/047003033X.ch9/pdf). |
+| **Description:** |  |
+
 ----
 
 ## B. Motivation
