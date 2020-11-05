@@ -24,8 +24,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 |  | Specification |
 |---|---|
 | **Description:** | Cars: CO2 footprint based on countries. |
-| **Importance:** | MUST |
-| **Example:** | Gene Ontology (GO), v2.13; Foundational Model of Anatomy Ontology (FMA), v4.22; |
+
 ----
 
 ### A.2 Ontology owner
