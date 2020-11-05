@@ -23,7 +23,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Cars: CO2 footprint based on countries. |
+| **Description:** | Car selection based on CO2 footprint and price |
 
 ----
 
@@ -31,7 +31,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Jerome Dauba jerome.dauba@telecom-paris.fr , Jean-Charles Lévy jean-charles.levy@telecom-paris.fr , Antoine Boulat antoine.boulat@teleco-paris.fr  |
+| **Description:** | Jerome Dauba jerome.dauba@telecom-paris.fr , Jean-Charles Lévy jean-charles.levy@telecom-paris.fr , Antoine Boulat antoine.boulat@telecom-paris.fr  |
 
 ----
 
@@ -63,7 +63,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** |  |
+| **Description:** | Analyse the lifecycle of car (electric and thermic) and then use some features of eco-conception. We weight the classification by the energy mix of each country. But ecologic choice has economic impact. So we have weight the economic impact by the purchase power of the user. |
 
 ----
 
@@ -73,27 +73,26 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Justification of why the ontology is required. |
-| **Importance:** | MUST |
-| **Example:** | For example, the 2015 JBMS article "Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon" has the following: "Here we present the unification of anatomy ontologies into Uberon, a single ontology resource that enables interoperability among disparate data and research groups." http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-21 |
+| **Description:** | It cans help, for people living in different country, classify wich kind of car to choose to minimize our ecological impact. We weight this result by the purchase power of user. https://youmatter.world/en/are-electric-cars-eco-friendly-and-zero-emission-vehicles-26440/ |
+
+
 ----
 
 ### B.2 Competition
 
 |  | Specification |
 |---|---|
-| **Description:** | The names and citations for other ontology or ontologies in the same general area as the one being reported upon, together with a description on why the one being reported is needed instead or in addition to the others. |
-| **Importance:** | MUST |
-| **Example:** | The background section of the paper "The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation" in JBMS 2014 describes other attempts to describe software in ontologies or vocabularies. See http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
+| **Description:** | Our ontology is not based on another one. We follow the pizza ontology to make the best model as possible. |
+
 ----
 
 ### B.3 Target audience
 
 |  | Specification |
 |---|---|
-| **Description:** | The community or organisation performing some task or use for which the ontology was developed. |
-| **Importance:** | MUST |
-| **Example:** | The Gene Ontology is used by curators of gene products to describe the major functional attributes of those gene products to provide a common language across species for describing the molecular function, biological process and cellular location of gene products. |
+| **Description:** | This ontology is realised in the course IA301 at Telecom Paris. The audience will be our classmate and the teacher. |
+
+
 ----
 
 ## C. Scope, requirements, development community
@@ -102,27 +101,24 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The domain or field of interest for the ontology and the boundaries, granularity of representation and coverage of the ontology. State the requirements of the ontology, such as the competency questions it should satisfy. A visualisation or tabular representation is optional, but often helpful to illustrate the scope. |
-| **Importance:** | MUST |
-| **Example:** | From the Human Phenotype Ontology NAR 2013 article "human phenotypic abnormalities." https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkt1026  |
+| **Description:** | The domain of field is PLM (Product Lifecycle Management). The question would be : what is the best car to buy if I'm living in a specific country weight by my purchase power ? https://www.transportenvironment.org/sites/te/files/downloads/T%26E%E2%80%99s%20EV%20life%20cycle%20analysis%20LCA.pdf |
+
 ----
 
 ### C.2 Development community
 
 |  | Specification |
 |---|---|
-| **Description:** | The person, group of people or organisation that actually creates the content of the ontology. This is distinct from the Ontology Owner (above) that is concerned with the management of the ontology's development. |
-| **Importance:** | MUST |
-| **Example:** | The Gene Ontology is developed by the Gene Ontology Consortium. |
+| **Description:** | Group of student at Telecom Paris in MS IA supervize by Natalia Diaz |
+
 ----
 
 ### C.3 Communication
 
 |  | Specification |
 |---|---|
-| **Description:** | Location, usually URL,  of the email list and/or the issue tracking systems used for development and managing feature requests for the ontology. |
-| **Importance:** | MUST |
-| **Example:** | http://www.ebi.ac.uk/efo/submit.html |
+| **Description:** | Online meeting |
+
 ----
 
 ## D. Knowledge acquisition
@@ -131,27 +127,18 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | How the knowledge in the ontology was gathered, sorted, verified, etc. |
-| **Importance:** | MUST |
-| **Example:** | Description of the source knowledge in the materials and method section of the article for The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation in JBMS 2014 https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25 |
+| **Description:** | We spend a long time compare the data for the different model of vehicule. The data are sometimes incoherent from one site to another. We choose to keep data from non-governmental organization and also from ADEME (french national ecological agency), especially for the energetic mix of each country. We regroup all the data founded in the xls join in this project. |
+
 ----
 
 ### D.2 Source knowledge location
 
 |  | Specification |
 |---|---|
-| **Description:** | The location of the source whence the knowledge was gathered. |
-| **Importance:** | SHOULD |
-| **Example:** | Description of data gathered such as found in https://softwareontology.wordpress.com/2011/04/04/an-agile-ontology/. Other examples may include the outputs from workshops, curating the literature for a field, crowd sourcing input and so on. |
-----
+| **Description:** | -	https://www.bilans-ges.ademe.fr/documentation/UPLOAD_DOC_FR/index.htm?moyenne_par_pays.htm
+-	https://greenercars.org/greenercars-ratings/how-we-determine-ratings
+-	https://www.greenpeace.org/international/story/24136/these-12-car-companies-are-setting-the-world-on-fire/ |
 
-### D.3 Content selection
-
-|  | Specification |
-|---|---|
-| **Description:** | The prioritisation of entities to be represented in the ontology and how that prioritisation was achieved. Some knowledge is more important or of greater priority to be in the ontology to support the requirements of that ontology. |
-| **Importance:** | SHOULD |
-| **Example:** | Description of the prioritisation process for the Software Ontology in https://softwareontology.wordpress.com/2011/04/04/an-agile-ontology/ |
 ----
 
 ## E. Ontology content
@@ -160,100 +147,25 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | the knowledge representation language used and why it was used. For a language like OWL, indicate the OWL profile and expressivity. |
-| **Importance:** | MUST |
-| **Example:** | OWL version 2, EL profile. |
+| **Description:** | OWL |
+
 ----
 
 ### E.2 Development environment
 
 |  | Specification |
 |---|---|
-| **Description:** | The tool(s) used in developing the ontology. |
-| **Importance:** | OPTIONAL |
-| **Example:** | Protégé, WebProtégé, TawnyOWL, TopBraid Composer, Swoop, etc. |
+| **Description:** | Protégé |
+
 ----
 
 ### E.3 Ontology metrics
 
 |  | Specification |
 |---|---|
-| **Description:** | Number of classes, properties, axioms and types of axioms, rules and individuals in the ontology. |
-| **Importance:** | SHOULD |
-| **Example:** | From the Human Phenotype Ontology NAR 2013 article "Human Phenotype Ontology provides a structured, comprehensive and well-defined set of 10,088 classes (terms) describing human phenotypic abnormalities and 13,326 subclass relations between the HPO classes." https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkt1026  |
-----
+| **Description:** | 34 class, 8 object properties, 3 data properties, 238 axioms, 16 individuals in the ontology. |
 
-### E.4 Incorporation of other ontologies
 
-|  | Specification |
-|---|---|
-| **Description:** | The names, versions and citations of external ontologies imported into the ontology and where they are placed in the host ontology. |
-| **Importance:** | MUST |
-| **Example:** | Import of Uberon core – extended version, 2016-05-11 release under the 'anatomical entity' class. |
-----
-
-### E.5 Entity naming convention
-
-|  | Specification |
-|---|---|
-| **Description:** | The naming scheme for the entities in the ontology, capturing orthography, organisation rules, acronyms, and so on. |
-| **Importance:** | MUST |
-| **Example:** | Open Biomedical Ontologies (OBO) Foundry naming conventions; see http://www.obofoundry.org/principles/fp-012-naming-conventions.html. |
-----
-
-### E.6 Identifier generation policy
-
-|  | Specification |
-|---|---|
-| **Description:** | What is the scheme used for creating identifiers for entities in the ontology. State whether identifiers are semantic-free or meaningful. |
-| **Importance:** | MUST |
-| **Example:** | Incremental class number, using 10 digit number with ontology name as the prefix. |
-----
-
-### E.7 Entity metadata policy
-
-|  | Specification |
-|---|---|
-| **Description:** | What metadata for each entity is to be present. This could include, but not be limited to: A natural language definition, editor, edit history, examples, entity label and synonyms, etc. |
-| **Importance:** | MUST |
-| **Example:** | Each class minimally requires a textual definition, a label, a creator and an edit date. The Ontology for Biomedical  Investigations (OBI) paper <https://www.ncbi.nlm.nih.gov/pubmed/27128319> has a section entitled  "Choice of metadata conventions". |
-|
-----
-
-### E.8 Upper ontology
-
-|  | Specification |
-|---|---|
-| **Description:** | If an upper ontology is used, which one is used and why is it used? If not used, then why. |
-| **Importance:** | MUST |
-| **Example:** | SUMO, BFO. The Ontology for Biomedical Investigations (OBI) paper <http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0154556> has a sentence "While each had its strengths and weaknesses, BFO was chosen due to its association with the nascent OBO Foundry"  in its discussion. |
-----
-
-### E.9 Ontology relationships
-
-|  | Specification |
-|---|---|
-| **Description:** | The relationships or properties used in the ontology, which were used and why? Were new relationships required? Why? |
-| **Importance:** | MUST |
-| **Example:** | The schema.org relationships were imported and used. We used the OBO Relations Ontology. |
-----
-
-### E.10 Axiom patterns 
-
-|  | Specification |
-|---|---|
-| **Description:** | An axiom pattern is a regular design of axioms or a template for axioms used to represent a category of entities or common aspects of a variety of types of entities. An axiom pattern may comprise both asserted and inferred axioms. The aim of a pattern is to achieve a consistent style of representation. An important family of axiom patterns are Ontology Design pattern (ODP) which are commonly used solutions for issues in representation.  |
-| **Importance:** | MUST |
-| **Example:** | The axiom patterns described in the Section "The Ontology"  for the Software Ontology in its JBMS paper (http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-25). Patterns can be presented as examples or in the form of axiom templates, such as a reference to an ontology design pattern (http://ontologydesignpatterns.org/wiki/Main_Page). |
-----
-
-### E.11 Dereferenceable IRIs 
-
-|  | Specification |
-|---|---|
-| **Description:** | State whether or not the IRI used are dereferencable to a Web resource. Provide any standard prefix (CURIE). |
-| **Importance:** | SHOULD |
-| **Example:** | For example, http://purl.obolibrary.org/obo/GO_0006915 |
 ----
 
 ## F. Managing Change
@@ -262,27 +174,15 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | State whether the ontology will be actively maintained and developed. Describe a plan for how the ontology will be kept up to date. |
-| **Importance:** | MUST |
-| **Example:** | Outline of sustainability plan, including method to sustain and who will be responsible. |
+| **Description:** | Feel free to enhance the model. This is a student project but the aim is interesting and ecologic. |
 ----
 
 ### F.2 Entity deprecation strategy 
 
 |  | Specification |
 |---|---|
-| **Description:** | Describe the procedures for managing entities that become removed, split or redefined. |
-| **Importance:** | MUST |
-| **Example:** | The owl:DeprecatedClass; no class is deleted from the ontology, but deprecated classes are labelled as obsolete with an annotation property. |
-----
+| **Description:** | The owl:DeprecatedClass; no class is deleted from the ontology, but deprecated classes are labelled as obsolete with an annotation property. |
 
-### F.3 Versioning policy
-
-|  | Specification |
-|---|---|
-| **Description:** | State or make reference to the policy that governs when new versions of the ontology are created and released. |
-| **Importance:** | MUST |
-| **Example:** | The Open Biomedical Ontologies Consortium has a versioning policy, see http://www.obofoundry.org/id-policy.html. This page states "Versions are named by a date in the following format: YYYY-MM-DD. For a given version of an ontology, the ontology should be accessible at the following URL, where <idspace> is replaced by the IDSPACE in lower case." and gives further elaboration. |
 ----
 
 ## G. Quality Assurance
@@ -291,36 +191,18 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | Description of the procedure used to judge whether the ontology achieves the claims made for the ontology. State, for example, whether the ontology is logically consistent, answers the queries it claims to answer, and whether it can answer them in a time that is reasonable for the projected use case scenario (benchmarking). |
-| **Importance:** | MUST |
-| **Example:** | Examples of competency questions that can be asked. Examples of inferences that can be made. Classification time using an appropriate reasoner: "The ontology was successfully classified by both Pellet 2.3.1 and HermiT 1.3.8 (i.e., is logically consistent) in less than 1 second. All classes in the ontology are satisfiable." |
-----
+| **Description:** | All classes in the ontology are satisfiable. Using HermiT, the ontology is able to classify car (instance) in different class (eco_friendly, very_polluting for exemple). You just need to start the reasoner to perform this. We also use DL Query to dermine which car to chosse in which situation. ex DL Query : USA and medium_price_car and average_polluting_car => Renault_zoe_USA. |
 
-### G.2 Evaluation
-
-|  | Specification |
-|---|---|
-| **Description:** | A determination of whether the ontology is of value and significance. An evaluation should show that the motivation is justified and that the objectives of the ontology's development are met effectively and satisfactorily. Describe whether or not the ontology meets its stated requirements, competency questions and goals.  |
-| **Importance:** | MUST |
-| **Example:** | There is an evaluation described for the Emotion Ontology in the paper "Evaluating the Emotion Ontology through use in the self-reporting of emotional responses in an academic conference". http://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-5-38 |
 ----
 
 ### G.3 Example of use
 
 |  | Specification |
 |---|---|
-| **Description:** | An illustration of the ontology in use in its an application setting or use case. |
-| **Importance:** | MUST |
-| **Example:** | to Table S1 in The Ontology for Biomedical Investigations article in PLoS One 2016 https://www.ncbi.nlm.nih.gov/pubmed/27128319 shows the projects using OBI. |
-----
+| **Description:** | DL Query : USA and medium_price_car and average_polluting_car => Renault_zoe_USA
+to perform new classification, feel free to add more individual.|
 
-### G.4 Institutional endorsement
 
-|  | Specification |
-|---|---|
-| **Description:** | State whether the ontology is endorsed by the W3C, the OBO foundry or some organisation representing a community. |
-| **Importance:** | OPTIONAL |
-| **Example:** | SNOMED is mandated for use by many national health organisations. The Chemicals of Biological Interest Ontology is a member of the OBO Foundry.   |
 ----
 
 
@@ -328,8 +210,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | An illustration of active projects and applications that use the ontology.   |
-| **Importance:** | MUST |
-| **Example:** | The Gene Ontology is used to annotate the gene products for their molecular function, biological process and cellular component in many species specific and cross-species databases. |
+| **Description:** | The Car Ontogy is used to classify cars based on CO2 footprint and price. We consider both ecological and economic parameter. |
+
 ----
 
