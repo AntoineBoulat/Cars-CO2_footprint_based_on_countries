@@ -1,0 +1,1170 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/jerom/ontologies/2020/9/car"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/jerom/ontologies/2020/9/car"
+     versionIRI="http://www.semanticweb.org/jerom/ontologies/2020/9/car/v3">
+    <Prefix name="" IRI="http://www.semanticweb.org/jerom/ontologies/2020/9/car"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>A car ontology that describes different cars, thermal or electric, and their carbon footprint based on country and product lifecycle</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AveragePollutingCar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BMW"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BMW_Series_7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Car"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CarBrand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CarCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CarEnergyType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CarType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#China"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EcoFriendlyCar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricCar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Germany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighPriceCar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowPriceCar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumPriceCar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mitsubishi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mitsubishi_Mirage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NamedCar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PollutingCar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Renault"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Renault_ZOE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SUV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sedan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tesla"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tesla_Model_S"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thermal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermalCar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#USA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Urban"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeryPollutingCar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#4x4"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBrand"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCarType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEnergyType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBrandOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCarTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCharacteristicOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEnergyTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#costsInEuros"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#emitsTonsCO2"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isInCountry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bmw_7_Series_China"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bmw_7_Series_France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bmw_7_Series_Germany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bmw_7_Series_Usa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_China"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_Germany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_Usa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Renault_ZOE_China"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Renault_ZOE_France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Renault_ZOE_Germany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Renault_ZOE_Usa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tesla_Model_S_China"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tesla_Model_S_France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tesla_Model_S_Germany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tesla_Model_S_Usa"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AveragePollutingCar"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Car"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#emitsTonsCO2"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#emitsTonsCO2"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#China"/>
+        <DataHasValue>
+            <DataProperty IRI="#isInCountry"/>
+            <Literal>China</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EcoFriendlyCar"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Car"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#emitsTonsCO2"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ElectricCar"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Car"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasEnergyType"/>
+                <Class IRI="#Electric"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#France"/>
+        <DataHasValue>
+            <DataProperty IRI="#isInCountry"/>
+            <Literal>France</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Germany"/>
+        <DataHasValue>
+            <DataProperty IRI="#isInCountry"/>
+            <Literal>Germany</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HighPriceCar"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Car"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#costsInEuros"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LowPriceCar"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Car"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#costsInEuros"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MediumPriceCar"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Car"/>
+            <ObjectIntersectionOf>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#costsInEuros"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12000</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+                <DataSomeValuesFrom>
+                    <DataProperty IRI="#costsInEuros"/>
+                    <DatatypeRestriction>
+                        <Datatype abbreviatedIRI="xsd:integer"/>
+                        <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50000</Literal>
+                        </FacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PollutingCar"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Car"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#emitsTonsCO2"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#emitsTonsCO2"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ThermalCar"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Car"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasEnergyType"/>
+                <Class IRI="#Thermal"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#USA"/>
+        <DataHasValue>
+            <DataProperty IRI="#isInCountry"/>
+            <Literal>USA</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#VeryPollutingCar"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Car"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#emitsTonsCO2"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#BMW"/>
+        <Class IRI="#CarBrand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BMW_Series_7"/>
+        <Class IRI="#NamedCar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BMW_Series_7"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#BMW"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BMW_Series_7"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCarType"/>
+            <Class IRI="#Sedan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BMW_Series_7"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEnergyType"/>
+            <Class IRI="#Thermal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#emitsTonsCO2"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CarBrand"/>
+        <Class IRI="#CarCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CarEnergyType"/>
+        <Class IRI="#CarCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CarType"/>
+        <Class IRI="#CarCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#China"/>
+        <Class IRI="#Country"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electric"/>
+        <Class IRI="#CarEnergyType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#France"/>
+        <Class IRI="#Country"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Germany"/>
+        <Class IRI="#Country"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mitsubishi"/>
+        <Class IRI="#CarBrand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mitsubishi_Mirage"/>
+        <Class IRI="#NamedCar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mitsubishi_Mirage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Mitsubishi"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mitsubishi_Mirage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCarType"/>
+            <Class IRI="#Urban"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mitsubishi_Mirage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEnergyType"/>
+            <Class IRI="#Thermal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NamedCar"/>
+        <Class IRI="#Car"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Renault"/>
+        <Class IRI="#CarBrand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Renault_ZOE"/>
+        <Class IRI="#NamedCar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Renault_ZOE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Renault"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Renault_ZOE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCarType"/>
+            <Class IRI="#Urban"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Renault_ZOE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEnergyType"/>
+            <Class IRI="#Electric"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SUV"/>
+        <Class IRI="#CarType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sedan"/>
+        <Class IRI="#CarType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tesla"/>
+        <Class IRI="#CarBrand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tesla_Model_S"/>
+        <Class IRI="#NamedCar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tesla_Model_S"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrand"/>
+            <Class IRI="#Tesla"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tesla_Model_S"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCarType"/>
+            <Class IRI="#Sedan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tesla_Model_S"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEnergyType"/>
+            <Class IRI="#Electric"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thermal"/>
+        <Class IRI="#CarEnergyType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#USA"/>
+        <Class IRI="#Country"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Urban"/>
+        <Class IRI="#CarType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#4x4"/>
+        <Class IRI="#CarType"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#BMW_Series_7"/>
+        <NamedIndividual IRI="#Bmw_7_Series_China"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NamedCar"/>
+        <NamedIndividual IRI="#Bmw_7_Series_China"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BMW_Series_7"/>
+        <NamedIndividual IRI="#Bmw_7_Series_France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NamedCar"/>
+        <NamedIndividual IRI="#Bmw_7_Series_France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BMW_Series_7"/>
+        <NamedIndividual IRI="#Bmw_7_Series_Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NamedCar"/>
+        <NamedIndividual IRI="#Bmw_7_Series_Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BMW_Series_7"/>
+        <NamedIndividual IRI="#Bmw_7_Series_Usa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NamedCar"/>
+        <NamedIndividual IRI="#Bmw_7_Series_Usa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitsubishi_Mirage"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_China"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NamedCar"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_China"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitsubishi_Mirage"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NamedCar"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitsubishi_Mirage"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NamedCar"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mitsubishi_Mirage"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_Usa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NamedCar"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_Usa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NamedCar"/>
+        <NamedIndividual IRI="#Renault_ZOE_China"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Renault_ZOE"/>
+        <NamedIndividual IRI="#Renault_ZOE_China"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NamedCar"/>
+        <NamedIndividual IRI="#Renault_ZOE_France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Renault_ZOE"/>
+        <NamedIndividual IRI="#Renault_ZOE_France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NamedCar"/>
+        <NamedIndividual IRI="#Renault_ZOE_Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Renault_ZOE"/>
+        <NamedIndividual IRI="#Renault_ZOE_Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NamedCar"/>
+        <NamedIndividual IRI="#Renault_ZOE_Usa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Renault_ZOE"/>
+        <NamedIndividual IRI="#Renault_ZOE_Usa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NamedCar"/>
+        <NamedIndividual IRI="#Tesla_Model_S_China"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tesla_Model_S"/>
+        <NamedIndividual IRI="#Tesla_Model_S_China"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NamedCar"/>
+        <NamedIndividual IRI="#Tesla_Model_S_France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tesla_Model_S"/>
+        <NamedIndividual IRI="#Tesla_Model_S_France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NamedCar"/>
+        <NamedIndividual IRI="#Tesla_Model_S_Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tesla_Model_S"/>
+        <NamedIndividual IRI="#Tesla_Model_S_Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NamedCar"/>
+        <NamedIndividual IRI="#Tesla_Model_S_Usa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tesla_Model_S"/>
+        <NamedIndividual IRI="#Tesla_Model_S_Usa"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bmw_7_Series_China"/>
+        <NamedIndividual IRI="#Bmw_7_Series_France"/>
+        <NamedIndividual IRI="#Bmw_7_Series_Germany"/>
+        <NamedIndividual IRI="#Bmw_7_Series_Usa"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_China"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_France"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_Germany"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_Usa"/>
+        <NamedIndividual IRI="#Renault_ZOE_China"/>
+        <NamedIndividual IRI="#Renault_ZOE_France"/>
+        <NamedIndividual IRI="#Renault_ZOE_Germany"/>
+        <NamedIndividual IRI="#Renault_ZOE_Usa"/>
+        <NamedIndividual IRI="#Tesla_Model_S_China"/>
+        <NamedIndividual IRI="#Tesla_Model_S_France"/>
+        <NamedIndividual IRI="#Tesla_Model_S_Germany"/>
+        <NamedIndividual IRI="#Tesla_Model_S_Usa"/>
+    </DifferentIndividuals>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsInEuros"/>
+        <NamedIndividual IRI="#Bmw_7_Series_China"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">105000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsTonsCO2"/>
+        <NamedIndividual IRI="#Bmw_7_Series_China"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">67</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInCountry"/>
+        <NamedIndividual IRI="#Bmw_7_Series_China"/>
+        <Literal>China</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsInEuros"/>
+        <NamedIndividual IRI="#Bmw_7_Series_France"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsTonsCO2"/>
+        <NamedIndividual IRI="#Bmw_7_Series_France"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">67</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInCountry"/>
+        <NamedIndividual IRI="#Bmw_7_Series_France"/>
+        <Literal>France</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsInEuros"/>
+        <NamedIndividual IRI="#Bmw_7_Series_Germany"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">85000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsTonsCO2"/>
+        <NamedIndividual IRI="#Bmw_7_Series_Germany"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">67</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInCountry"/>
+        <NamedIndividual IRI="#Bmw_7_Series_Germany"/>
+        <Literal>Germany</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsInEuros"/>
+        <NamedIndividual IRI="#Bmw_7_Series_Usa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">95000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsTonsCO2"/>
+        <NamedIndividual IRI="#Bmw_7_Series_Usa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">67</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInCountry"/>
+        <NamedIndividual IRI="#Bmw_7_Series_Usa"/>
+        <Literal>USA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsInEuros"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_China"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsTonsCO2"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_China"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">46</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInCountry"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_China"/>
+        <Literal>China</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsInEuros"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_France"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsTonsCO2"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_France"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">46</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInCountry"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_France"/>
+        <Literal>France</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsInEuros"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_Germany"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsTonsCO2"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_Germany"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">46</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInCountry"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_Germany"/>
+        <Literal>Germany</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsInEuros"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_Usa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsTonsCO2"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_Usa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">46</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInCountry"/>
+        <NamedIndividual IRI="#Mitsubishi_Mirage_Usa"/>
+        <Literal>USA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsInEuros"/>
+        <NamedIndividual IRI="#Renault_ZOE_China"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsTonsCO2"/>
+        <NamedIndividual IRI="#Renault_ZOE_China"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">44</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInCountry"/>
+        <NamedIndividual IRI="#Renault_ZOE_China"/>
+        <Literal>China</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsInEuros"/>
+        <NamedIndividual IRI="#Renault_ZOE_France"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsTonsCO2"/>
+        <NamedIndividual IRI="#Renault_ZOE_France"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInCountry"/>
+        <NamedIndividual IRI="#Renault_ZOE_France"/>
+        <Literal>France</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsInEuros"/>
+        <NamedIndividual IRI="#Renault_ZOE_Germany"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsTonsCO2"/>
+        <NamedIndividual IRI="#Renault_ZOE_Germany"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInCountry"/>
+        <NamedIndividual IRI="#Renault_ZOE_Germany"/>
+        <Literal>Germany</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsInEuros"/>
+        <NamedIndividual IRI="#Renault_ZOE_Usa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsTonsCO2"/>
+        <NamedIndividual IRI="#Renault_ZOE_Usa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">33</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInCountry"/>
+        <NamedIndividual IRI="#Renault_ZOE_Usa"/>
+        <Literal>USA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsInEuros"/>
+        <NamedIndividual IRI="#Tesla_Model_S_China"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsTonsCO2"/>
+        <NamedIndividual IRI="#Tesla_Model_S_China"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">54</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInCountry"/>
+        <NamedIndividual IRI="#Tesla_Model_S_China"/>
+        <Literal>China</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsInEuros"/>
+        <NamedIndividual IRI="#Tesla_Model_S_France"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsTonsCO2"/>
+        <NamedIndividual IRI="#Tesla_Model_S_France"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInCountry"/>
+        <NamedIndividual IRI="#Tesla_Model_S_France"/>
+        <Literal>France</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsInEuros"/>
+        <NamedIndividual IRI="#Tesla_Model_S_Germany"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsTonsCO2"/>
+        <NamedIndividual IRI="#Tesla_Model_S_Germany"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">38</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInCountry"/>
+        <NamedIndividual IRI="#Tesla_Model_S_Germany"/>
+        <Literal>Germany</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#costsInEuros"/>
+        <NamedIndividual IRI="#Tesla_Model_S_Usa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">65000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#emitsTonsCO2"/>
+        <NamedIndividual IRI="#Tesla_Model_S_Usa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInCountry"/>
+        <NamedIndividual IRI="#Tesla_Model_S_Usa"/>
+        <Literal>USA</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBrand"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCarType"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEnergyType"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBrandOf"/>
+        <ObjectProperty IRI="#isCharacteristicOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCarTypeOf"/>
+        <ObjectProperty IRI="#isCharacteristicOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isEnergyTypeOf"/>
+        <ObjectProperty IRI="#isCharacteristicOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasBrand"/>
+        <ObjectProperty IRI="#isBrandOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCarType"/>
+        <ObjectProperty IRI="#isCarTypeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+        <ObjectProperty IRI="#isCharacteristicOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasEnergyType"/>
+        <ObjectProperty IRI="#isEnergyTypeOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasBrand"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBrand"/>
+        <Class IRI="#Car"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCarType"/>
+        <Class IRI="#Car"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEnergyType"/>
+        <Class IRI="#Car"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBrandOf"/>
+        <Class IRI="#CarBrand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCarTypeOf"/>
+        <Class IRI="#CarType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEnergyTypeOf"/>
+        <Class IRI="#CarEnergyType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBrand"/>
+        <Class IRI="#CarBrand"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCarType"/>
+        <Class IRI="#CarType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEnergyType"/>
+        <Class IRI="#CarEnergyType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBrandOf"/>
+        <Class IRI="#Car"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCarTypeOf"/>
+        <Class IRI="#Car"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isEnergyTypeOf"/>
+        <Class IRI="#Car"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#costsInEuros"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#emitsTonsCO2"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isInCountry"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#costsInEuros"/>
+        <Class IRI="#Car"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#emitsTonsCO2"/>
+        <Class IRI="#Car"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isInCountry"/>
+        <Class IRI="#Car"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#costsInEuros"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#emitsTonsCO2"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isInCountry"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AveragePollutingCar</IRI>
+        <Literal>Defined class for inference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Car</IRI>
+        <Literal>General class for named car class and defined classes for inference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CarBrand</IRI>
+        <Literal>Brand of car</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CarCharacteristic</IRI>
+        <Literal>General class for car brand, car type and energy type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CarEnergyType</IRI>
+        <Literal>Energy type of car</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CarType</IRI>
+        <Literal>Type of car</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#China</IRI>
+        <Literal>Car produced and used in China</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Country</IRI>
+        <Literal>General class for country of origin and use of car</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EcoFriendlyCar</IRI>
+        <Literal>Defined class for inference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ElectricCar</IRI>
+        <Literal>Defined class for inference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#France</IRI>
+        <Literal>Car produced in Europe and used in France</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Germany</IRI>
+        <Literal>Car produced in Europe and used in Germany</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NamedCar</IRI>
+        <Literal>Class for specific car classes populated with actual car individuals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PollutingCar</IRI>
+        <Literal>Defined class for inference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ThermalCar</IRI>
+        <Literal>Defined class for inference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#USA</IRI>
+        <Literal>Car produced and used in USA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VeryPollutingCar</IRI>
+        <Literal>Defined class for inference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#emitsTonsCO2</IRI>
+        <Literal>Ton of CO2 emission during the full life cycle of the car (production, use, recycling)</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
