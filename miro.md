@@ -23,7 +23,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | The full name of the ontology, including the acronym and the version number referred to in the report. |
+| **Description:** | Cars: CO2 footprint based on countries. |
 | **Importance:** | MUST |
 | **Example:** | Gene Ontology (GO), v2.13; Foundational Model of Anatomy Ontology (FMA), v4.22; |
 ----
