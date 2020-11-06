@@ -47,7 +47,7 @@ This document contains the Minimum Information for Reporting of an Ontology (MIR
 
 |  | Specification |
 |---|---|
-| **Description:** | http://www.semanticweb.org/jerom/ontologies/2020/9/car/v2 |
+| **Description:** | http://www.semanticweb.org/jerom/ontologies/2020/10/untitled-ontology-16 |
 
 ----
 
